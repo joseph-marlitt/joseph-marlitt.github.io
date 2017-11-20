@@ -1,3 +1,107 @@
+/* navbar */
+.navbar-collapse {
+	padding-right: 100px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-right {
+	font-size: 18px;
+	margin-top: 10px;
+}
+.navbar-right {
+	border: solid;
+	border: thin;
+}
+.navbar-left {
+	margin-left: 100px;
+}
+.navbar.navbar-default {
+    background-color: #ffffff;
+    border-color: #E7E7E7;
+    margin-left: 50px;
+}
+.navbar-brand {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin-left: 75px;
+	font-size: 24px;
+    color: #ffffff;
+    background-color: #4aaaa5
+}
+/* Title */
+.navbar-default .navbar-brand {
+	height: 60px;
+	margin-left: 75px;
+	font-size: 24px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #4aaaa5;
+    background-color: #ffffff;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+	padding-top: 10px;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: #4aaaa5;
+    background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+}
 #wrapper {
 	min-height: 100%;
 	margin-bottom: -145px;
@@ -14,7 +118,6 @@ body {
 }
 
 #name {
-	float: left;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 28px;
 	background-color: #4aaaa5;
@@ -38,6 +141,7 @@ body {
 .links:hover {
     background-color: #4aaaa5;
     color: #ffffff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
 #middle:hover {
@@ -58,6 +162,12 @@ body {
 .links:last-child{
 	border:none;
 }
+.links:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+img:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 #middle {
 	text-decoration: none;
@@ -74,17 +184,16 @@ body {
 #background {
 	clear: both;
 	background-image: url(../images/background.png);
-	border-top: solid;
-	border-color: #777777;
 	padding: 20px;
-	width: 920px;
-	height: 600px;
+	width: 100%;
+	height: auto;
 	overflow: auto;	
 }
 #main {
 	float: left;
-	width: 560px;
+	width: 100%;
 	padding: 20px;
+	margin-top: 20px;
 	margin-right: 50px;
 	color: 777777;
 	background-color: #ffffff;
@@ -109,6 +218,7 @@ body {
 	padding-top: 20px;
 }
 #sidebar {
+	margin-top: 20px;
 	float: left;
 	width: 270px;
 	background-color: #ffffff;
@@ -120,17 +230,18 @@ p {
 	padding-top: 20px;
 	color: #777777;
 	border-top: solid;
+	border-width: thin;
 }
 
 #sidebar {
-	width: 270px;
+	width: 100%;
 
 }
 .connect {
 	padding: 15px;
 	margin: 10px;
-	border-bottom-width: 2px;
 	border-bottom: solid;
+	border-width: thin;
 	border-bottom-color: #777777;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 28px;

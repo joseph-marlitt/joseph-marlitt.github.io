@@ -249,12 +249,12 @@ p {
 	color: #4aaaa5;
 }
 #icons {
-	margin-left: 40px;
+	margin: auto;
 	padding-top: 10px;
-	display: inline;
+	display: table;
 }
 .icon {
-	padding: 5px;
+	padding: 10px;
 
 }
 footer {

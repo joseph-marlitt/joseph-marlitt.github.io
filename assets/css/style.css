@@ -202,7 +202,8 @@ img:hover {
 	overflow: auto;
 }
 .aboutme {
-	padding: 10px;
+	margin-top: 9px;
+	padding-left: 12px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 28px;
 	background-color: #ffffff;
